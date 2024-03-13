@@ -9,7 +9,7 @@ int main(){
     int answer;
 
     answer = util();
-    // std::cout << answer << std::endl; debug code
+    std::cout << "Answer is "<< answer << std::endl; 
     game(answer);
 
 }
