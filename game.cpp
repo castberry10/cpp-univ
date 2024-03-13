@@ -9,8 +9,13 @@ int game(int answer){
     answerchar[2] = answer % 10;
     int strike = 0;
     int ball = 0;
-
+    int chance = 5;
     while(1){
+        std::cout << chance << " chances left." << std::endl;
+        if (chance <= 0){
+            std::cout << "You loss!" << std::endl;
+            break;
+        }
         std::cout << "Enter a guess :";
         std::cin >> guess;
 
@@ -27,6 +32,7 @@ int game(int answer){
             if (guesschar[1] == answerchar[1]) strike++;
             if (guesschar[2] == answerchar[2]) strike++;
 
+
             // 볼 판별
             if (guesschar[0] == answerchar[1]) ball++;
             if (guesschar[0] == answerchar[2]) ball++;
@@ -37,6 +43,7 @@ int game(int answer){
             std::cout << "Strikes: " << strike << ", Balls: " << ball <<std::endl;
             ball = 0;
             strike = 0;
+            chance--;
         }
 
     }
