@@ -2,3 +2,8 @@
 .vscode
 
 auto.bat
+
+game.o
+main.o
+util.o
+main.exe
