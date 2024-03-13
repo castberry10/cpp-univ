@@ -22,11 +22,10 @@ int game(int answer){
             guesschar[0] = guess / 100;
             guesschar[1] = (guess % 100) / 10;
             guesschar[2] = guess % 10;
-            // 스트라이크 판별
+            // 스트라이크 판별  
             if (guesschar[0] == answerchar[0]) strike++;
             if (guesschar[1] == answerchar[1]) strike++;
             if (guesschar[2] == answerchar[2]) strike++;
-
 
             // 볼 판별
             if (guesschar[0] == answerchar[1]) ball++;
