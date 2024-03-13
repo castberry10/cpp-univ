@@ -9,7 +9,8 @@ int main(){
     int answer;
 
     answer = util();
-    std::cout << "Answer is "<< answer << std::endl; 
+    // std::cout << "Answer is "<< answer << std::endl; 
+    std::printf("Answer is %03d\n", answer);
     game(answer);
 
 }
