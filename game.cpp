@@ -27,6 +27,7 @@ int game(int answer){
             if (guesschar[1] == answerchar[1]) strike++;
             if (guesschar[2] == answerchar[2]) strike++;
 
+
             // 볼 판별
             if (guesschar[0] == answerchar[1]) ball++;
             if (guesschar[0] == answerchar[2]) ball++;
